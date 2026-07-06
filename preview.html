@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de Planilhas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f5f7fa,#dbe4ec);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+    padding:40px;
+    text-align:center;
+}
+
+.logo{
+    width:260px;
+    max-width:90%;
+    margin-bottom:35px;
+}
+
+h1{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#666;
+    margin-bottom:35px;
+}
+
+.botoes{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.botao{
+    display:block;
+    text-decoration:none;
+    background:#0056b3;
+    color:white;
+    padding:18px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.25s;
+    box-shadow:0 5px 15px rgba(0,86,179,.25);
+}
+
+.botao:hover{
+    background:#003f82;
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,86,179,.35);
+}
+
+footer{
+    margin-top:35px;
+    color:#888;
+    font-size:13px;
+}
+
+@media(max-width:600px){
+
+.container{
+    padding:25px;
+}
+
+.botao{
+    font-size:16px;
+    padding:16px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <img class="logo" src="https://i.imgur.com/L8DmScj.png" alt="Logo">
+
+    <h1>Painel de Acesso</h1>
+    <p class="subtitulo">
+        Selecione uma das planilhas abaixo.
+    </p>
+
+    <div class="botoes">
+
+        <a class="botao"
+        href="https://docs.google.com/spreadsheets/d/1avrsbrT1SJ5RMiyQ04cxS8UL2p5mEVf_AlJxrcQGJvo/edit?usp=sharing"
+        target="_blank">
+            ORDEM DE SERVIÇO PARA LÍDER
+        </a>
+
+        <a class="botao"
+        href="https://docs.google.com/spreadsheets/d/15ZU0_Gryxbz-4PThlYJM2LXgPXjL7yb1fFJW362Tjbw/edit?usp=sharing"
+        target="_blank">
+            ACONTECIMENTOS REVISÃO RELEVANTES
+        </a>
+
+        <a class="botao"
+        href="https://docs.google.com/spreadsheets/d/1AydKxJGTThaQyVK2yaO1j_XMYE2Pl_Vj_QwoBCYYBP8/edit?usp=sharing"
+        target="_blank">
+            FUNCIONÁRIOS ORDEM DE SERVIÇO PARA LÍDERES
+        </a>
+
+        <a class="botao"
+        href="https://docs.google.com/spreadsheets/d/1dDdRKOx0BjvMpCp7QaGT71CvtGz7ZNOWlIm6pAFPL9U/edit?usp=sharing"
+        target="_blank">
+            MALHAS COM DEFEITO | 2ª QUALIDADE
+        </a>
+
+    </div>
+
+    <footer>
+        Sistema de acesso rápido às planilhas.
+    </footer>
+
+</div>
+
+</body>
+</html>
